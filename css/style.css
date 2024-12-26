@@ -38,7 +38,11 @@ body{
     margin-right: 10px;
 }
 
-.social_href, .profile_href{
+.profile_icon_location{
+    margin-right: 14px;
+}
+
+.social_href, .profile_href, .certification_href{
     
     text-decoration: none;
     background-image: linear-gradient(var(--blue), var(--blue));
@@ -57,9 +61,14 @@ body{
     background-size: 100% 2px;
 }
 .profile_href{
-    padding: 10px 0px;
+    padding: 8px 0px;
 }
-.profile_href, .footer_href{
+
+.certification_href{
+    padding-bottom: 4px;
+}
+
+.profile_href, .certification_href, .footer_href{
     color: var(--darkgrey);
     text-decoration: none;
 }
@@ -69,7 +78,7 @@ body{
 .footer_href:hover, .footer_href:hover > i{
     color: var(--greybleached);
 }
-.profile_href:hover{
+.profile_href:hover, .certification_href:hover{
     background-size: 100% 2px;
 }
 .profile{
@@ -99,6 +108,9 @@ body{
 .profile_contacts{
     list-style: none;
     padding: 0;
+}
+.profile_contacts > li{
+    margin: 14px 0;
 }
 .info{
     display: grid;
